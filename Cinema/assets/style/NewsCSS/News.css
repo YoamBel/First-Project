@@ -1,0 +1,375 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e6e3e3;
+}
+
+main {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: white;
+}
+
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.5em;
+  color: black;
+  margin: 0px 0px 0px -40px;
+  margin-top: 0px;
+}
+
+main #vermi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #vermi .img-spe {
+  background-image: url("../NewsCSS/matrix.jpg");
+  background-image: no-repeat;
+  width: 640px;
+  height: 340px;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main #vermi .img-spe a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px 0px 35px 45px;
+}
+
+main #vermi .img-spe a:hover {
+  color: #6d6dec;
+}
+
+main .section-large {
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 640px;
+  height: 210px;
+  margin-top: 15px;
+}
+
+main .section-large .img-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section-large .img-large .resume {
+  margin: 10px 0px 0px 10px;
+}
+
+main .section-large .img-large .resume .jaune {
+  font-size: 13px;
+  color: #fecc00;
+}
+
+main .section-large .img-large .resume .gris {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main .section-large .img-large .resume a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 19px;
+}
+
+main .section-large .img-large .resume a:hover {
+  color: #6d6dec;
+}
+
+main .video3 {
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 640px;
+  margin-top: 20px;
+}
+
+main .section6 {
+  width: 640px;
+  height: 260px;
+  margin: 20px 0px 0px 32px;
+}
+
+main .section6 .photo-text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section6 .photo-text2 #biograph2 {
+  width: 204px;
+  height: 250px;
+}
+
+main .section6 .photo-text2 .bio8 .jaune {
+  font-size: 13px;
+  color: #fecc00;
+}
+
+main .section6 .photo-text2 .bio8 a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+}
+
+main .section6 .photo-text2 .bio8 a:hover {
+  color: #6d6dec;
+}
+
+main .section6 .photo-text2 .bio8 .gris {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main .img-spe2 {
+  background-image: url("../NewsCSS/zombiland.jpg");
+  background-image: no-repeat;
+  width: 640px;
+  height: 340px;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .img-spe2 a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px 0px 35px 45px;
+}
+
+main .img-spe2 a:hover {
+  color: #6d6dec;
+}
+
+.img-spe1 {
+  margin-top: 20px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.img-spe1 .categorie-titre {
+  font-size: 24px;
+}
+
+.img-spe1 .categorie-titre1 {
+  font-size: 18px;
+}
+
+.img-spe1 .categorie {
+  padding: 8px 0px 0px 0px;
+}
+
+.img-spe1 a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.img-spe1 a:hover {
+  color: #6d6dec;
+}
+
+@media (min-width: 1010px) and (max-width: 1300px) {
+  main h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 695px) and (max-width: 1009px) {
+  main {
+    width: 100%;
+    margin: 0px;
+    height: 3300px;
+  }
+  main h1 {
+    font-size: 22px;
+  }
+  main .section-large .img-large .resume a {
+    font-size: 15px;
+  }
+  main .video3 {
+    width: 400px;
+  }
+  main .video3 video {
+    width: 400px;
+  }
+  main .section6 {
+    height: 1060px;
+  }
+  main .section6 .photo-text2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .section6 .photo-text2 #biograph2 {
+    width: 360px;
+    height: 300px;
+  }
+  main .section6 .photo-text2 .bio8 img {
+    width: 360px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 444px) and (max-width: 694px) {
+  main {
+    width: 100%;
+    margin: 0px;
+  }
+  main h1 {
+    font-size: 17px;
+  }
+  main .section-large {
+    width: 380px;
+  }
+  main .section-large .img-large {
+    width: 260px;
+  }
+  main .section-large .img-large .resume {
+    display: none;
+  }
+  main .video3 {
+    width: 390px;
+  }
+  main .video3 video {
+    width: 390px;
+  }
+  main .section6 {
+    width: 390px;
+    height: 940px;
+  }
+  main .section6 .photo-text2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .section6 .photo-text2 #biograph2 {
+    width: 240px;
+    height: 320px;
+  }
+  main .section6 .photo-text2 .bio8 img {
+    width: 230px;
+    height: 180px;
+  }
+  main .jacob img {
+    width: 230px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 443px) {
+  main {
+    width: 100%;
+    height: 2820px;
+    margin: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main h1 {
+    font-size: 11px;
+  }
+  main #vermi {
+    height: 390px;
+  }
+  main .section-large {
+    width: 180px;
+  }
+  main .section-large .img-large .resume {
+    display: none;
+  }
+  main .video3 {
+    width: 200px;
+  }
+  main .video3 video {
+    width: 240px;
+  }
+  main .section6 {
+    width: 190px;
+    height: 940px;
+  }
+  main .section6 .photo-text2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .section6 .photo-text2 #biograph2 {
+    width: 190px;
+    height: 325px;
+  }
+  main .section6 .photo-text2 .bio8 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section6 .photo-text2 .bio8 img {
+    width: 170px;
+    height: 180px;
+  }
+  main .jacob img {
+    width: 175px;
+    height: 150px;
+  }
+}
+/*# sourceMappingURL=News.css.map */

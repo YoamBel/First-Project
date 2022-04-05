@@ -1,0 +1,251 @@
+@import "../variable/mixinGemeral.scss";
+@import "../variable/mixinSection1.scss";
+@import "../variable/vars.scss";
+body {
+    @include font();
+}
+
+footer {
+    height: 280px;
+    width: 100%;
+    background-color: #222222;
+    .container {
+        display: flex;
+        .container1 {
+            width: 35%;
+            height: 150px;
+            border: 1px solid rgb(70, 69, 69);
+            flex-wrap: wrap;
+            img {
+                margin: 0px 6px 0px 0px;
+                margin-left: 92px;
+                border-radius: 10px;
+                margin-top: 20px;
+                &:hover {
+                    box-shadow: 0px 0px 20px #fff;
+                }
+            }
+        }
+        .container2 {
+            width: 30%;
+            height: 150px;
+            border: 1px solid rgb(70, 69, 69);
+            flex-wrap: wrap;
+            img {
+                margin: 0px -65px 0px 0px;
+                margin-left: 140px;
+                border-radius: 10px;
+                margin-top: 20px;
+                &:hover {
+                    box-shadow: 0px 0px 20px #fff;
+                }
+            }
+        }
+        .container3 {
+            width: 35%;
+            height: 150px;
+            border: 1px solid rgb(70, 69, 69);
+            flex-wrap: wrap;
+            .aside3 {
+                display: flex;
+                margin: 0px 0px 5px;
+                padding: 0px 5px;
+                justify-content: space-around;
+                .aside1 {
+                    p {
+                        font-size: 10px;
+                        color: white;
+                        margin: 10px 0px;
+                        a {
+                            text-decoration: none;
+                            padding: 10px;
+                            font-size: 15px;
+                            color: white;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            .aside2 {
+                p {
+                    font-size: 10px;
+                    color: white;
+                    margin: 10px 0px;
+                    padding-left: 25px;
+                    a {
+                        text-decoration: none;
+                        padding: 10px;
+                        font-size: 15px;
+                        color: white;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            color: white;
+            font-size: 13px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+    }
+    .container4 {
+        font-size: 0.8em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        p {
+            color: white;
+            padding: 0px 4px;
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .container5 {
+        p {
+            color: white;
+            font-size: 0.8em;
+            display: flex;
+            justify-content: center;
+            margin: 3px 0px;
+            STRONG {
+                @include jaune();
+            }
+        }
+    }
+    .container6 {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0px;
+        img {
+            width: 140px;
+            height: 30px;
+        }
+    }
+}
+
+//----------------------------------------------------------------------
+//-------------------------MEDIA QUERY----------------------------------
+//----------------------------------------------------------------------
+//1 er taille
+//----------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 1025px) and (max-width: 1300px) {
+    footer {
+        height: 320px;
+        .container {
+            .container1 {
+                height: 180px;
+            }
+            .container2 {
+                height: 180px;
+                img {
+                    margin: 0px 0px 0px 0px;
+                    margin-left: 85px;
+                }
+            }
+            .container3 {
+                width: 35%;
+                height: 180px;
+            }
+        }
+    }
+}
+
+// 2eme taille
+//----------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 444px) and (max-width: 1024px) {
+    footer {
+        height: 420px;
+        .container {
+            .container1 {
+                height: 250px;
+                img {
+                    margin-left: 40px;
+                }
+            }
+            .container2 {
+                visibility: hidden;
+                width: 0%;
+                height: 250px;
+            }
+            .container3 {
+                width: 65%;
+                height: 250px;
+                .aside3 {
+                    .aside1 {
+                        p {
+                            margin: 40px 0px;
+                        }
+                    }
+                }
+                .aside2 {
+                    p {
+                        margin: 40px 0px;
+                    }
+                }
+            }
+        }
+        .container4 {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+// 3 eme taille 
+//---------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 250px) and (max-width: 443px) {
+    footer {
+        height: 550px;
+        .container {
+            .container1 {
+                height: 250px;
+                img {
+                    margin-left: 10px;
+                }
+            }
+            .container2 {
+                visibility: hidden;
+                width: 0%;
+                height: 250px;
+                img {
+                    margin-left: 85px;
+                }
+            }
+            .container3 {
+                width: 65%;
+                height: 250px;
+                .aside3 {
+                    display: flex;
+                    margin: 0px 0px 5px;
+                    padding: 0px 5px;
+                    justify-content: space-around;
+                    .aside1 {
+                        display: none;
+                        p {
+                            margin: 40px 0px;
+                        }
+                    }
+                }
+                .aside2 {
+                    p {
+                        margin: 40px 0px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+        .container4 {
+            flex-wrap: wrap;
+        }
+    }
+}

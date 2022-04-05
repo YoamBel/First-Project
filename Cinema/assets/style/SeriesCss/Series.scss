@@ -1,0 +1,425 @@
+@import "../variable/mixinGemeral.scss";
+@import "../variable/mixinSection1.scss";
+@import "../variable/vars.scss";
+@import "../variable/mixinSection3.scss";
+body {
+    @include font ();
+    background: map-get($color, blanc-gris);
+}
+
+main {
+    @include main();
+    background: white;
+    .maindiv {
+        width: 65%;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-image: url('../SeriesCss/series1.jpg');
+        background-size: 100% 100%;
+        animation: slider 13s infinite linear;
+        margin: -212px 0px 0px 0px;
+    }
+    @keyframes slider {
+        0% {
+            background-image: url('../SeriesCss/series1.jpg');
+            background-size: 100% 100%;
+        }
+        35% {
+            background-image: url('../SeriesCss/series2.jpg');
+            background-size: 100% 100%;
+        }
+        75% {
+            background-image: url('../SeriesCss/series3.jpg');
+            background-size: 100% 100%;
+        }
+    }
+    h1 {
+        @include h1();
+        margin: 20px 0px;
+    }
+    .img-film {
+        margin-top: 350px;
+    }
+    .section1 {
+        width: 100%;
+        height: 500px;
+        margin: 458px 0px 0px 0px;
+        .photo-text {
+            @include margin-right-left ();
+            display: flex;
+            justify-content: space-between;
+            #biograph {
+                width: 315px;
+                height: 465px;
+            }
+            .bio1 {
+                .jaune {
+                    @include jaune();
+                    margin: 10px 0px 0px 0px;
+                }
+                a {
+                    @include Lien();
+                    font-size: 14px;
+                }
+                .gris {
+                    @include gris();
+                }
+            }
+        }
+    }
+    .lien {
+        @include margin-right-left ();
+        display: flex;
+        font-size: 16px;
+        color: rgb(115, 115, 241);
+        text-decoration: none;
+        list-style: none;
+        &:hover {
+            color: rgb(155, 155, 235);
+        }
+    }
+    .barre-jaune {
+        @include barre-jaune;
+        margin: 75px 0px 0px 482px;
+    }
+    .section2 {
+        .top {
+            .menu2 {
+                nav {
+                    ul {
+                        @include NVmenu-ul ();
+                        li {
+                            display: flex;
+                            a {
+                                @include Lien();
+                                border: 1px solid rgb(218, 216, 216);
+                                padding: 7px 15px;
+                                font-size: 15px;
+                                &:hover {
+                                    padding: 8px 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .barre-gris {
+                width: 100%;
+                height: 0.6px;
+                background: map-get($color, rbg1);
+                display: flex;
+            }
+        }
+    }
+    .section3 {
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+        h2 {
+            @include margin-right-left ();
+            font-size: 18px;
+        }
+        .photo-text2 {
+            @include margin-right-left ();
+            display: flex;
+            flex-direction: row;
+            #biograph1 {
+                width: 150px;
+                height: 260px;
+                padding: 0px 15px 0px 0px;
+            }
+            .bio4 {
+                a {
+                    @include Lien();
+                    font-size: 14px;
+                }
+                .gris1 {
+                    @include gris();
+                }
+            }
+        }
+    }
+    .section4 {
+        width: 100%;
+        height: 120px;
+        h3 {
+            @include margin-right-left ();
+            font-size: 40px;
+            text-align: center;
+        }
+        .black-widow {
+            @include Lien();
+            margin: -15px 0px 0px 487px;
+            font-size: 14px;
+        }
+    }
+    .youtube {
+        iframe {
+            width: 100%;
+            height: 700px;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+}
+
+//----------------------------------------------------------------------
+//-------------------------MEDIA QUERY----------------------------------
+//----------------------------------------------------------------------
+//1 er taille
+//----------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 1025px) and (max-width: 1300px) {
+    main {
+        .section1 {
+            height: 960px;
+            .photo-text {
+                flex-wrap: wrap;
+                justify-content: center;
+                #biograph {
+                    margin-top: 25px;
+                }
+            }
+        }
+        .barre-jaune {
+            display: none;
+        }
+    }
+}
+
+// 2eme taille
+//----------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 580px) and (max-width: 1024px) {
+    main {
+        height: 3420px;
+        .section1 {
+            height: 960px;
+            .photo-text {
+                flex-wrap: wrap;
+                justify-content: center;
+                #biograph {
+                    width: 315px;
+                    height: 465px;
+                }
+            }
+        }
+        .barre-jaune {
+            display: none;
+        }
+        .section2 {
+            margin-top: 450px;
+        }
+        .section1-3 {
+            flex-wrap: wrap;
+            .section3 {
+                height: 565px;
+                flex-wrap: wrap;
+                .photo-text2 {
+                    flex-wrap: wrap;
+                    #biograph1 {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+        .section4 {
+            h3 {
+                display: none;
+            }
+        }
+        .youtube {
+            display: none;
+            iframe {
+                margin: 90px 0px 0px 0px;
+            }
+        }
+    }
+}
+
+// 3 eme taille 
+//---------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 444px) and (max-width: 579px) {
+    main {
+        //height: 4550px;
+        margin: 0px;
+        width: 100%;
+        h1 {
+            font-size: 40px;
+        }
+        .section1 {
+            height: 960px;
+            .photo-text {
+                flex-wrap: wrap;
+                justify-content: center;
+                #biograph {
+                    margin-top: 25px;
+                    width: 230px;
+                }
+                img {
+                    width: 220px;
+                }
+            }
+        }
+        .barre-jaune {
+            display: none;
+        }
+        .section2 {
+            margin-top: 450px;
+        }
+        .section1-3 {
+            flex-wrap: wrap;
+            .section3 {
+                height: 580px;
+                flex-wrap: wrap;
+                .photo-text2 {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    #biograph1 {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+        .section4 {
+            h3 {
+                display: none;
+            }
+        }
+        .youtube {
+            display: none;
+            iframe {
+                margin: 90px 0px 0px 0px;
+            }
+        }
+    }
+}
+
+// 4 eme taille 
+//-----------------------------------------------------------------------------------
+@media (min-width:411px) and (max-width: 443px) {
+    main {
+        // height: 4600px;
+        width: 100%;
+        margin: 0px;
+        h1 {
+            font-size: 40px;
+        }
+        .img-film {
+            margin-top: 350px;
+        }
+        .section1 {
+            height: 960px;
+            .photo-text {
+                flex-wrap: wrap;
+                justify-content: center;
+                #biograph {
+                    width: 220px;
+                    height: 465px;
+                }
+                .bio1 {
+                    img {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+        .barre-jaune {
+            display: none;
+        }
+        .section2 {
+            margin-top: 450px;
+        }
+        .section1-3 {
+            flex-wrap: wrap;
+            .section3 {
+                height: 570px;
+                flex-wrap: wrap;
+                .photo-text2 {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    #biograph1 {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+        .section4 {
+            width: 100%;
+            height: 120px;
+            h3 {
+                display: none;
+            }
+        }
+        .youtube {
+            display: none;
+            iframe {
+                margin: 90px 0px 0px 0px;
+            }
+        }
+    }
+}
+
+// 5 eme taille
+//--------------------------------------------------------------------------
+@media (min-width:250px) and (max-width: 410px) {
+    main {
+        height: 4600px;
+        width: 100%;
+        margin: 0px;
+        h1 {
+            font-size: 40px;
+        }
+        .img-film {
+            margin-top: 350px;
+        }
+        .section1 {
+            height: 960px;
+            .photo-text {
+                flex-wrap: wrap;
+                justify-content: center;
+                #biograph {
+                    width: 220px;
+                    height: 465px;
+                }
+                .bio1 {
+                    img {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+        .barre-jaune {
+            display: none;
+        }
+        .section2 {
+            margin-top: 450px;
+        }
+        .section1-3 {
+            flex-wrap: wrap;
+            .section3 {
+                height: 1140px;
+                flex-wrap: wrap;
+                .photo-text2 {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    #biograph1 {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+        .section4 {
+            width: 100%;
+            height: 120px;
+            h3 {
+                display: none;
+            }
+        }
+        .youtube {
+            display: none;
+            iframe {
+                margin: 90px 0px 0px 0px;
+            }
+        }
+    }
+}

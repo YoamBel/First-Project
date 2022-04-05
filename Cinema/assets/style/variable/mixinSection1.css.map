@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "mixinSection1.scss"
+    ],
+    "names": [],
+    "file": "mixinSection1.css"
+}

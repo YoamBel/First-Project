@@ -1,0 +1,496 @@
+@import "../variable/mixinGemeral.scss";
+@import "../variable/mixinSection1.scss";
+@import "../variable/vars.scss";
+@import "../variable/mixinSection3.scss";
+body {
+    background: black;
+    @include font();
+}
+
+main {
+    @include main ();
+    background: white;
+    .item-net {
+        display: flex;
+        justify-content: center;
+        padding: 15px 31px 15px 0px;
+    }
+    .img-Net {
+        background-image: url('../NetflixCss/geant.jpg');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        .img-Net-interne {
+            color: #dc291e;
+            padding: 170px 0px 0px 0px;
+            margin: 0px 0px 0px 290px;
+            flex-wrap: wrap;
+            width: 500px;
+            height: 100px;
+            h2 {
+                font-size: 30px;
+            }
+            p {
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    }
+    .all-news {
+        width: 100%;
+        height: 65px;
+        margin-top: 25px;
+        margin-left: 2em;
+        margin-right: 2em;
+        .p1 {
+            font-size: 15px;
+            margin: 0;
+        }
+        .p2 {
+            font-size: 40px;
+            margin: 0px;
+        }
+    }
+    .resume2 {
+        display: flex;
+        @include margin-right-left ();
+        img {
+            width: 100%;
+            height: 500px;
+        }
+    }
+    .section8 {
+        @include margin-right-left ();
+        .general2 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .img-Net2 {
+                display: flex;
+                flex-wrap: wrap;
+                .p3 {
+                    font-size: 43px;
+                    color: white;
+                    margin-left: 50px;
+                    padding: 325px 0px 0px 0px;
+                }
+            }
+        }
+    }
+    .img-Net3 {
+        .section-large {
+            width: 440px;
+            height: 210px;
+            margin-top: 15px;
+            .img-large {
+                display: flex;
+                .resume {
+                    margin: 10px 0px 0px 10px;
+                    .jaune {
+                        @include jaune();
+                    }
+                    .gris {
+                        @include gris();
+                    }
+                    a {
+                        @include Lien ();
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .section1 {
+        @include section1 ();
+        .barre-jaune {
+            @include barre-jaune ();
+            margin: 0px 0px 0px 450px;
+        }
+        .rooms {
+            margin: 0px 0px 15px;
+            padding: 20px 15px 0px;
+            a {
+                justify-content: center;
+                font-size: 40px;
+                @include Lien();
+            }
+        }
+        .NVmenu {
+            .menu2 {
+                nav {
+                    ul {
+                        @include NVmenu-ul();
+                        li {
+                            display: flex;
+                            a {
+                                @include NVmenu-a ();
+                            }
+                        }
+                    }
+                }
+            }
+            .bouton-barre2 {
+                @include boutton-barre2();
+                .form2 {
+                    display: flex;
+                    #barre2 {
+                        @include barre2();
+                    }
+                    .pt-text2 {
+                        color: map-get($color, bleu-lien);
+                        text-decoration: none;
+                        margin: 7px 0px 0px 160px;
+                        font-size: 18px;
+                        &:hover {
+                            color: white
+                        }
+                    }
+                }
+            }
+            .barre-blanche {
+                background: white;
+                height: 0.6px;
+                width: 987px;
+                box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+            }
+            .Link2 {
+                @include Link2();
+                .container7 {
+                    font-size: 0.8em;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        color: black;
+                        padding: 0px 4px;
+                        a {
+                            color: black;
+                            text-decoration: none;
+                            &:hover {
+                                color: rgb(109, 109, 236);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-general1 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .section-large {
+            width: 440px;
+            height: 210px;
+            margin-top: 15px;
+            .img-large {
+                display: flex;
+                .resume {
+                    margin: 10px 0px 0px 10px;
+                    .jaune {
+                        @include jaune();
+                    }
+                    .gris {
+                        @include gris();
+                    }
+                    a {
+                        font-size: 19px;
+                        @include Lien();
+                    }
+                }
+            }
+        }
+    }
+}
+
+//----------------------------------------------------------------------
+//-------------------------MEDIA QUERY----------------------------------
+//----------------------------------------------------------------------
+//1 er taille
+//----------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 823px) and (max-width: 1274px) {
+    main {
+        .img-Net {
+            display: none;
+        }
+        .section8 {
+            display: flex;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .general2 {
+                flex-direction: column;
+                .img-Net2 {
+                    img {
+                        width: 560px;
+                        height: 540px;
+                    }
+                }
+            }
+        }
+    }
+    .img-Net3 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        .netflix {
+            width: 350px;
+        }
+        .section-large {
+            width: 380px;
+            .img-large {
+                display: flex;
+                .resume {
+                    margin: 10px 0px 0px 10px;
+                }
+            }
+        }
+    }
+    .section1 {
+        .barre-jaune {
+            margin: 0px 0px 0px 450px;
+            visibility: hidden;
+        }
+        .rooms {
+            margin: 0px 0px 15px;
+            padding: 20px 15px 0px;
+        }
+        .bouton-barre2 {
+            visibility: hidden;
+        }
+        .barre-blanche {
+            visibility: hidden;
+        }
+        .Link2 {
+            visibility: hidden;
+        }
+    }
+}
+
+.section-general1 {
+    margin: -5px 0px 0px 0px;
+}
+
+// 2eme taille
+//----------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 590px) and (max-width: 822px) {
+    main {
+        .img-Net {
+            display: none;
+        }
+        .resume2 {
+            display: flex;
+            @include margin-right-left ();
+            img {
+                width: 100%;
+                height: 500px;
+            }
+        }
+        .section8 {
+            display: flex;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .general2 {
+                flex-direction: column;
+                .img-Net2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    img {
+                        width: 350px;
+                        height: 540px;
+                    }
+                }
+            }
+        }
+    }
+    .img-Net3 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        .netflix {
+            width: 350px;
+        }
+        .section-large {
+            width: 380px;
+        }
+    }
+    .section1 {
+        .barre-jaune {
+            visibility: hidden;
+        }
+        .bouton-barre2 {
+            visibility: hidden;
+        }
+        .barre-blanche {
+            visibility: hidden;
+        }
+        .Link2 {
+            visibility: hidden;
+        }
+    }
+}
+
+.section-general1 {
+    margin: -5px 0px 0px 0px;
+}
+
+// 3 eme taille 
+//---------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 408px) and (max-width: 589px) {
+    main {
+        .img-Net {
+            display: none;
+        }
+        .section8 {
+            display: flex;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .general2 {
+                flex-direction: column;
+                .img-Net2 {
+                    img {
+                        width: 220px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+        .img-Net3 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            .section-large {
+                width: 380px;
+                .img-large {
+                    .resume {
+                        margin: 10px 0px 0px 10px;
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .section1 {
+            display: none;
+            .barre-jaune {
+                visibility: hidden;
+            }
+            .bouton-barre2 {
+                visibility: hidden;
+            }
+            .barre-blanche {
+                visibility: hidden;
+            }
+            .Link2 {
+                display: none;
+            }
+        }
+    }
+    .section-general1 {
+        margin: -5px 0px 0px 0px;
+        .section-large {
+            .img-large {
+                .resume {
+                    margin: -65px 0px 0px 36px;
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .fiction {
+        display: none;
+    }
+    .netflix {
+        width: 230px;
+    }
+}
+
+// 4 eme taille 
+//-----------------------------------------------------------------------------------
+@media (min-width:250px) and (max-width: 407px) {
+    main {
+        margin-left: 55px;
+        .img-Net {
+            display: none;
+        }
+        .section8 {
+            display: flex;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .general2 {
+                flex-direction: column;
+                .img-Net2 {
+                    img {
+                        width: 106px;
+                        height: 108px;
+                    }
+                }
+            }
+        }
+        .img-Net3 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            .section-large {
+                width: 380px;
+                .img-large {
+                    .resume {
+                        margin: 10px 0px 0px 10px;
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .section1 {
+            display: none;
+            .barre-jaune {
+                visibility: hidden;
+            }
+            .bouton-barre2 {
+                visibility: hidden;
+            }
+            .barre-blanche {
+                visibility: hidden;
+            }
+            .Link2 {
+                display: none;
+            }
+        }
+    }
+    .section-general1 {
+        margin: -5px 0px 0px 0px;
+        .section-large {
+            width: 440px;
+            .img-large {
+                .resume {
+                    margin: -65px 0px 0px 36px;
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .fiction {
+        display: none;
+    }
+    .netflix {
+        width: 113px;
+    }
+}

@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  height: 280px;
+  width: 100%;
+  background-color: #222222;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .container1 {
+  width: 35%;
+  height: 150px;
+  border: 1px solid #464545;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container .container1 img {
+  margin: 0px 6px 0px 0px;
+  margin-left: 92px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer .container .container1 img:hover {
+  -webkit-box-shadow: 0px 0px 20px #fff;
+          box-shadow: 0px 0px 20px #fff;
+}
+
+footer .container .container2 {
+  width: 30%;
+  height: 150px;
+  border: 1px solid #464545;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container .container2 img {
+  margin: 0px -65px 0px 0px;
+  margin-left: 140px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer .container .container2 img:hover {
+  -webkit-box-shadow: 0px 0px 20px #fff;
+          box-shadow: 0px 0px 20px #fff;
+}
+
+footer .container .container3 {
+  width: 35%;
+  height: 150px;
+  border: 1px solid #464545;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container .container3 .aside3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 5px;
+  padding: 0px 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .container .container3 .aside3 .aside1 p {
+  font-size: 10px;
+  color: white;
+  margin: 10px 0px;
+}
+
+footer .container .container3 .aside3 .aside1 p a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+footer .container .container3 .aside3 .aside1 p a:hover {
+  text-decoration: underline;
+}
+
+footer .container .container3 .aside2 p {
+  font-size: 10px;
+  color: white;
+  margin: 10px 0px;
+  padding-left: 25px;
+}
+
+footer .container .container3 .aside2 p a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+footer .container .container3 .aside2 p a:hover {
+  text-decoration: underline;
+}
+
+footer .container h1 {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+footer .container4 {
+  font-size: 0.8em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container4 p {
+  color: white;
+  padding: 0px 4px;
+}
+
+footer .container4 p a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .container4 p a:hover {
+  text-decoration: underline;
+}
+
+footer .container5 p {
+  color: white;
+  font-size: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3px 0px;
+}
+
+footer .container5 p STRONG {
+  font-size: 13px;
+  color: #fecc00;
+}
+
+footer .container6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0px;
+}
+
+footer .container6 img {
+  width: 140px;
+  height: 30px;
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+  footer {
+    width: 117%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  footer {
+    width: 195%;
+  }
+}
+
+@media (min-width: 444px) and (max-width: 639px) {
+  footer {
+    width: 265%;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 443px) {
+  footer {
+    width: 295%;
+  }
+}
+/*# sourceMappingURL=FooterVod.css.map */

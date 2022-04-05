@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background: #fecc00;
+}
+
+header .cine {
+  padding: 0px 10px;
+  height: 60px;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+header .cine .logo {
+  width: 50px;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+header .cine .bouton-barre {
+  margin-top: 20px;
+}
+
+header .cine .bouton-barre form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .cine .bouton-barre form #barre {
+  padding: 10px 14px;
+  font-size: 0.8em;
+  outline: none;
+  border: 1px solid #fecc00;
+  padding-left: 20px;
+  width: 350px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+header .cine .bouton-barre form .RD {
+  padding: 0px 0px 0px 0px;
+  outline: none;
+  border: 1px solid #fecc00;
+  background-color: white;
+  border: 1px solid black;
+}
+
+header .cine .bouton-barre form .RD .loupe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .cine .bouton-barre .pt-text {
+  font-size: 0.7em;
+  list-style: none;
+  text-decoration: none;
+  color: #757575;
+}
+
+header .cine .bouton-barre .pt-text:hover {
+  color: white;
+}
+
+header .boutton {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .boutton .etoile {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .boutton button {
+  color: white;
+  background: black;
+  font-size: 15px;
+  font-family: "momospace";
+  padding: 8px 30px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  height: 35px;
+}
+
+header .boutton button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 6px 6px 25px 4px rgba(0, 0, 0, 0.18);
+          box-shadow: 6px 6px 25px 4px rgba(0, 0, 0, 0.18);
+}
+
+header .boutton button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: 6px 6px 18px 2px rgba(0, 0, 0, 0.23);
+          box-shadow: 6px 6px 18px 2px rgba(0, 0, 0, 0.23);
+}
+
+header .Link {
+  padding: 0px 10px;
+  height: 60px;
+  margin-left: 15%;
+  margin-right: 15%;
+  float: left;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li a {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 7px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: white;
+  padding: 8px 15px;
+}
+
+header nav ul li a img {
+  height: 1em;
+  width: 1em;
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+  header {
+    width: 117%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  header {
+    width: 195%;
+  }
+}
+
+@media (min-width: 444px) and (max-width: 639px) {
+  header {
+    width: 265%;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 443px) {
+  header {
+    width: 295%;
+  }
+}
+/*# sourceMappingURL=HeaderVod.css.map */

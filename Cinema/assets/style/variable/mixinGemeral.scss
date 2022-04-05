@@ -1,0 +1,38 @@
+@mixin font () {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin margin-right-left () {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+@mixin barre-jaune () {
+    height: 4px;
+    width: 80px;
+    background: #fecc00;
+    display: flex;
+}
+
+@mixin main() {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+@mixin h1() {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5em;
+    color: black;
+}
+
+@mixin jaune() {
+    font-size: 13px;
+    color: map-get($color, jaune-spe);
+}
+
+@mixin gris() {
+    font-size: 10px;
+    color: map-get($color, gris-mini);
+}

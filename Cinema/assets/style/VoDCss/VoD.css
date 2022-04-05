@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e6e3e3;
+}
+
+main {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: white;
+}
+
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.5em;
+  color: black;
+  margin: 0px 0px 25px 0px;
+  padding: 25px 31px 0px 0px;
+}
+
+main .section3 {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+}
+
+main .section3 h2 {
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 18px;
+}
+
+main .section3 .photo-text2 {
+  margin-left: 2em;
+  margin-right: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .section3 .photo-text2 #biograph1 {
+  width: 150px;
+  height: 260px;
+  padding: 0px 15px 0px 0px;
+}
+
+main .section3 .photo-text2 .bio4 a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+}
+
+main .section3 .photo-text2 .bio4 a:hover {
+  color: #6d6dec;
+}
+
+main .section3 .photo-text2 .bio4 .gris1 {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main .droite {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .droite .categorie-titre {
+  font-size: 24px;
+}
+
+main .droite .categorie-titre1 {
+  font-size: 18px;
+}
+
+main .droite .categorie {
+  padding: 8px 0px 0px 0px;
+}
+
+main .droite .gris1 {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main .droite .jaune {
+  font-size: 13px;
+  color: #fecc00;
+}
+
+main .droite a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+}
+
+main .droite a:hover {
+  color: #6d6dec;
+}
+
+main .droite .ligne-grise {
+  width: 100%;
+  height: 1px;
+  background: #dad7d7;
+}
+
+main .section6 {
+  width: 640px;
+  height: 260px;
+  margin: 20px 0px 0px 32px;
+}
+
+main .section6 .photo-text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section6 .photo-text2 #biograph2 {
+  width: 204px;
+  height: 250px;
+}
+
+main .section6 .photo-text2 .bio8 .jaune {
+  font-size: 13px;
+  color: #fecc00;
+}
+
+main .section6 .photo-text2 .bio8 a {
+  font-size: 14px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+main .section6 .photo-text2 .bio8 a:hover {
+  color: #6d6dec;
+}
+
+main .section6 .photo-text2 .bio8 .gris {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main video {
+  width: 100%;
+  height: 500px;
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+  main {
+    width: 102%;
+    margin: 0px;
+  }
+  main h1 {
+    padding: 25px 150px 0px 0px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  main {
+    width: 180%;
+    margin: 0px;
+  }
+  main h1 {
+    padding: 25px 150px 0px 0px;
+  }
+}
+
+@media (min-width: 444px) and (max-width: 639px) {
+  main {
+    width: 250%;
+    margin: 0px;
+  }
+  main h1 {
+    padding: 25px 150px 0px 0px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 443px) {
+  main {
+    width: 295%;
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=VoD.css.map */

@@ -1,0 +1,107 @@
+// MIXINS DE LA SECTION 1 ET 2 
+@mixin Lien () {
+    //lien en general
+    position: relative;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    &:hover {
+        color: rgb(109, 109, 236);
+    }
+}
+
+@mixin barre-blanche() {
+    //barre blanche de la separation
+    background: white;
+    height: 0.6px;
+    width: 987px;
+    box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+@mixin section1 () {
+    //parametre despacement de la section1
+    margin-left: 2em;
+    margin-right: 2em;
+    height: 345px;
+    margin-top: 40px;
+}
+
+@mixin NVmenu-ul() {
+    //liste de menu
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@mixin NVmenu-a () {
+    //le menu pour les lien
+    font-size: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 7px 15px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid rgb(218, 216, 216);
+    &:hover {
+        color: rgb(109, 109, 236);
+        padding: 8px 15px;
+    }
+}
+
+@mixin boutton-barre2() {
+    // boutton de la barre
+    width: 960px;
+    height: 35px;
+    background: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+@mixin barre2() {
+    //construction 2 eme barre
+    display: flex;
+    padding: 5px 14px;
+    margin: 0px 0px 0px 0px;
+    font-size: 0.8em;
+    outline: none;
+    padding-left: 20px;
+    width: 350px;
+    background-color: white;
+    border: 0.4px solid black;
+}
+
+@mixin Lien2() {
+    //lien 2 du bas
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    color: rgb(109, 109, 236);
+    text-decoration: none;
+    list-style: none;
+    &:hover {
+        color: rgb(154, 154, 241);
+    }
+}
+
+@mixin pt-text2() {
+    //login into search
+    color: rgb(109, 109, 236);
+    text-decoration: none;
+    margin: 7px 0px 0px 160px;
+    font-size: 18px;
+    &:hover {
+        color: white
+    }
+}
+
+@mixin Link2() {
+    width: 1000px;
+    height: 45px;
+    background: map-get($color, gris-blanc);
+    border-radius: 5px;
+}

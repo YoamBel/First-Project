@@ -1,0 +1,668 @@
+body {
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: white;
+}
+
+main .item-net {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 31px 15px 0px;
+}
+
+main .img-Net {
+  background-image: url("../NetflixCss/geant.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+main .img-Net .img-Net-interne {
+  color: #dc291e;
+  padding: 170px 0px 0px 0px;
+  margin: 0px 0px 0px 290px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
+  height: 100px;
+}
+
+main .img-Net .img-Net-interne h2 {
+  font-size: 30px;
+}
+
+main .img-Net .img-Net-interne p {
+  text-align: center;
+  font-size: 16px;
+}
+
+main .all-news {
+  width: 100%;
+  height: 65px;
+  margin-top: 25px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+main .all-news .p1 {
+  font-size: 15px;
+  margin: 0;
+}
+
+main .all-news .p2 {
+  font-size: 40px;
+  margin: 0px;
+}
+
+main .resume2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+main .resume2 img {
+  width: 100%;
+  height: 500px;
+}
+
+main .section8 {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+main .section8 .general2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+main .section8 .general2 .img-Net2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .section8 .general2 .img-Net2 .p3 {
+  font-size: 43px;
+  color: white;
+  margin-left: 50px;
+  padding: 325px 0px 0px 0px;
+}
+
+main .img-Net3 .section-large {
+  width: 440px;
+  height: 210px;
+  margin-top: 15px;
+}
+
+main .img-Net3 .section-large .img-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .img-Net3 .section-large .img-large .resume {
+  margin: 10px 0px 0px 10px;
+}
+
+main .img-Net3 .section-large .img-large .resume .jaune {
+  font-size: 13px;
+  color: #fecc00;
+}
+
+main .img-Net3 .section-large .img-large .resume .gris {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main .img-Net3 .section-large .img-large .resume a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 17px;
+}
+
+main .img-Net3 .section-large .img-large .resume a:hover {
+  color: #6d6dec;
+}
+
+main .section1 {
+  margin-left: 2em;
+  margin-right: 2em;
+  height: 345px;
+  margin-top: 40px;
+}
+
+main .section1 .barre-jaune {
+  height: 4px;
+  width: 80px;
+  background: #fecc00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 0px 450px;
+}
+
+main .section1 .rooms {
+  margin: 0px 0px 15px;
+  padding: 20px 15px 0px;
+}
+
+main .section1 .rooms a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+main .section1 .rooms a:hover {
+  color: #6d6dec;
+}
+
+main .section1 .NVmenu .menu2 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+main .section1 .NVmenu .menu2 nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section1 .NVmenu .menu2 nav ul li a {
+  font-size: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 7px 15px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #dad8d8;
+}
+
+main .section1 .NVmenu .menu2 nav ul li a:hover {
+  color: #6d6dec;
+  padding: 8px 15px;
+}
+
+main .section1 .NVmenu .bouton-barre2 {
+  width: 960px;
+  height: 35px;
+  background: #f0f0f0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 #barre2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 14px;
+  margin: 0px 0px 0px 0px;
+  font-size: 0.8em;
+  outline: none;
+  padding-left: 20px;
+  width: 350px;
+  background-color: white;
+  border: 0.4px solid black;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 .pt-text2 {
+  color: #6d6dec;
+  text-decoration: none;
+  margin: 7px 0px 0px 160px;
+  font-size: 18px;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 .pt-text2:hover {
+  color: white;
+}
+
+main .section1 .NVmenu .barre-blanche {
+  background: white;
+  height: 0.6px;
+  width: 987px;
+  -webkit-box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+main .section1 .NVmenu .Link2 {
+  width: 1000px;
+  height: 45px;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+main .section1 .NVmenu .Link2 .container7 {
+  font-size: 0.8em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section1 .NVmenu .Link2 .container7 p {
+  color: black;
+  padding: 0px 4px;
+}
+
+main .section1 .NVmenu .Link2 .container7 p a {
+  color: black;
+  text-decoration: none;
+}
+
+main .section1 .NVmenu .Link2 .container7 p a:hover {
+  color: #6d6dec;
+}
+
+main .section-general1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .section-general1 .section-large {
+  width: 440px;
+  height: 210px;
+  margin-top: 15px;
+}
+
+main .section-general1 .section-large .img-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section-general1 .section-large .img-large .resume {
+  margin: 10px 0px 0px 10px;
+}
+
+main .section-general1 .section-large .img-large .resume .jaune {
+  font-size: 13px;
+  color: #fecc00;
+}
+
+main .section-general1 .section-large .img-large .resume .gris {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main .section-general1 .section-large .img-large .resume a {
+  font-size: 19px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+main .section-general1 .section-large .img-large .resume a:hover {
+  color: #6d6dec;
+}
+
+@media (min-width: 823px) and (max-width: 1274px) {
+  main .img-Net {
+    display: none;
+  }
+  main .section8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  main .section8 .general2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .section8 .general2 .img-Net2 img {
+    width: 560px;
+    height: 540px;
+  }
+  .img-Net3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .img-Net3 .netflix {
+    width: 350px;
+  }
+  .img-Net3 .section-large {
+    width: 380px;
+  }
+  .img-Net3 .section-large .img-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .img-Net3 .section-large .img-large .resume {
+    margin: 10px 0px 0px 10px;
+  }
+  .section1 .barre-jaune {
+    margin: 0px 0px 0px 450px;
+    visibility: hidden;
+  }
+  .section1 .rooms {
+    margin: 0px 0px 15px;
+    padding: 20px 15px 0px;
+  }
+  .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  .section1 .barre-blanche {
+    visibility: hidden;
+  }
+  .section1 .Link2 {
+    visibility: hidden;
+  }
+}
+
+.section-general1 {
+  margin: -5px 0px 0px 0px;
+}
+
+@media (min-width: 590px) and (max-width: 822px) {
+  main .img-Net {
+    display: none;
+  }
+  main .resume2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  main .resume2 img {
+    width: 100%;
+    height: 500px;
+  }
+  main .section8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  main .section8 .general2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .section8 .general2 .img-Net2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .section8 .general2 .img-Net2 img {
+    width: 350px;
+    height: 540px;
+  }
+  .img-Net3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .img-Net3 .netflix {
+    width: 350px;
+  }
+  .img-Net3 .section-large {
+    width: 380px;
+  }
+  .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  .section1 .barre-blanche {
+    visibility: hidden;
+  }
+  .section1 .Link2 {
+    visibility: hidden;
+  }
+}
+
+.section-general1 {
+  margin: -5px 0px 0px 0px;
+}
+
+@media (min-width: 408px) and (max-width: 589px) {
+  main .img-Net {
+    display: none;
+  }
+  main .section8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  main .section8 .general2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .section8 .general2 .img-Net2 img {
+    width: 220px;
+    height: 400px;
+  }
+  main .img-Net3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  main .img-Net3 .section-large {
+    width: 380px;
+  }
+  main .img-Net3 .section-large .img-large .resume {
+    margin: 10px 0px 0px 10px;
+  }
+  main .img-Net3 .section-large .img-large .resume p {
+    font-size: 10px;
+  }
+  main .section1 {
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  main .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  main .section1 .barre-blanche {
+    visibility: hidden;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  .section-general1 {
+    margin: -5px 0px 0px 0px;
+  }
+  .section-general1 .section-large .img-large .resume {
+    margin: -65px 0px 0px 36px;
+  }
+  .section-general1 .section-large .img-large .resume p {
+    font-size: 10px;
+  }
+  .fiction {
+    display: none;
+  }
+  .netflix {
+    width: 230px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 407px) {
+  main {
+    margin-left: 55px;
+  }
+  main .img-Net {
+    display: none;
+  }
+  main .section8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  main .section8 .general2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .section8 .general2 .img-Net2 img {
+    width: 106px;
+    height: 108px;
+  }
+  main .img-Net3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  main .img-Net3 .section-large {
+    width: 380px;
+  }
+  main .img-Net3 .section-large .img-large .resume {
+    margin: 10px 0px 0px 10px;
+  }
+  main .img-Net3 .section-large .img-large .resume p {
+    font-size: 10px;
+  }
+  main .section1 {
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  main .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  main .section1 .barre-blanche {
+    visibility: hidden;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  .section-general1 {
+    margin: -5px 0px 0px 0px;
+  }
+  .section-general1 .section-large {
+    width: 440px;
+  }
+  .section-general1 .section-large .img-large .resume {
+    margin: -65px 0px 0px 36px;
+  }
+  .section-general1 .section-large .img-large .resume p {
+    font-size: 10px;
+  }
+  .fiction {
+    display: none;
+  }
+  .netflix {
+    width: 113px;
+  }
+}
+/*# sourceMappingURL=Netflix.css.map */

@@ -1,0 +1,359 @@
+@import "../variable/mixinGemeral.scss";
+@import "../variable/mixinSection1.scss";
+@import "../variable/vars.scss";
+@import "../variable/mixinSection3.scss";
+body {
+    background: map-get($color, blanc-gris);
+    @include font();
+}
+
+main {
+    @include main();
+    background: white;
+    h1 {
+        @include h1 ();
+        margin-top: 0px;
+        margin: 0px 0px 0px -40px;
+    }
+    .maindiv {
+        width: 65%;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-image: url('../CinemaCss/ani.jpg');
+        background-size: 100% 100%;
+        animation: slider 9s infinite linear;
+        margin: -212px 0px 0px 0px;
+    }
+    @keyframes slider {
+        0% {
+            background-image: url('../DvDCss/ani.jpg');
+            background-size: 100% 100%;
+        }
+        35% {
+            background-image: url('../DvDCss/netflix2.jpg');
+            background-size: 100% 100%;
+        }
+        75% {
+            background-image: url('../DvDCss/toystory.jpg');
+            background-size: 100% 100%;
+        }
+        100% {
+            background-image: url('../DvDCss/rob.jpg');
+            background-size: 100% 100%;
+        }
+    }
+    #section1-3 {
+        .section3 {
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+            h2 {
+                @include margin-right-left ();
+                font-size: 18px;
+            }
+            .photo-text2 {
+                @include margin-right-left ();
+                display: flex;
+                flex-direction: row;
+                #biograph1 {
+                    width: 150px;
+                    height: 260px;
+                    padding: 0px 15px 0px 0px;
+                }
+                .bio4 {
+                    a {
+                        @include Lien();
+                    }
+                    .gris1 {
+                        @include gris ();
+                    }
+                }
+            }
+        }
+        .lien {
+            @include margin-right-left ();
+            display: flex;
+            font-size: 16px;
+            color: rgb(115, 115, 241);
+            text-decoration: none;
+            list-style: none;
+            &:hover {
+                color: rgb(155, 155, 235);
+            }
+        }
+        .droite {
+            flex-wrap: wrap;
+            .gris1 {
+                @include gris ();
+            }
+            .jaune {
+                @include jaune();
+            }
+            a {
+                @include Lien();
+                font-size: 14px;
+            }
+            .ligne-grise {
+                width: 100%;
+                height: 1px;
+                background: rgb(218, 215, 215);
+            }
+        }
+        .barre-jaune {
+            @include barre-jaune();
+            margin: 75px 0px 35px 482px;
+        }
+    }
+    video {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+//----------------------------------------------------------------------
+//-------------------------MEDIA QUERY----------------------------------
+//----------------------------------------------------------------------
+// 1 er taille 
+//-----------------------------------------------------------------------------------------------------
+@media (min-width: 1025px) and (max-width: 1300px) {
+    main {
+        width: 100%;
+        margin: 0px;
+        h1 {
+            width: 100%;
+        }
+        #section1-3 {
+            .section3 {
+                flex-wrap: wrap;
+                .droite {
+                    width: 320px;
+                    .extrem {
+                        width: 317px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 2eme taille
+//----------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 707px) and (max-width: 1024px) {
+    main {
+        width: 100%;
+        margin: 0px;
+        h1 {
+            margin-top: 0px;
+            width: 100%;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #section1-3 {
+            .section3 {
+                height: 325px;
+                // display: flex;
+                flex-wrap: wrap;
+                h2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 15px;
+                }
+                .photo-text2 {
+                    flex-wrap: wrap;
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 30px;
+                    #biograph1 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                    }
+                    .bio4 {
+                        img {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        //margin-top: 30px;
+                    }
+                }
+            }
+            .droite {
+                flex-wrap: wrap;
+                display: none;
+            }
+            .barre-jaune {
+                display: none;
+            }
+        }
+        video {
+            display: flex;
+        }
+    }
+}
+
+// 3eme taille
+//----------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 560px) and (max-width: 706px) {
+    main {
+        width: 100%;
+        margin: 0px;
+        h1 {
+            margin-top: 0px;
+            width: 100%;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #section1-3 {
+            .section3 {
+                height: 670px;
+                // display: flex;
+                flex-wrap: wrap;
+                h2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 15px;
+                }
+                .photo-text2 {
+                    flex-wrap: wrap;
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 30px;
+                    #biograph1 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                    }
+                    .bio4 {
+                        img {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        //margin-top: 30px;
+                    }
+                }
+            }
+            .droite {
+                flex-wrap: wrap;
+                display: none;
+            }
+            .barre-jaune {
+                display: none;
+            }
+        }
+        video {
+            display: flex;
+        }
+    }
+}
+
+// 4 eme taille 
+//---------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 377px) and (max-width: 559px) {
+    main {
+        width: 100%;
+        margin: 0px;
+        margin: 0px;
+        h1 {
+            width: 100%;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #section1-3 {
+            .section3 {
+                height: 640px;
+                display: flex;
+                flex-wrap: wrap;
+                ;
+                h2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 15px;
+                }
+                .photo-text2 {
+                    flex-wrap: wrap;
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 30px;
+                    #biograph1 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                    }
+                    .bio4 {
+                        img {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        // margin-top: 30px;
+                    }
+                }
+            }
+            .droite {
+                flex-wrap: wrap;
+                display: none;
+            }
+            .barre-jaune {
+                display: none;
+            }
+        }
+        video {
+            display: flex;
+        }
+    }
+}
+
+// 5eme taille 
+//-----------------------------------------------------------------------------------------
+@media (min-width:250px) and (max-width: 376px) {
+    main {
+        width: 100%;
+        margin: 0px;
+        h1 {
+            width: 100%;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #section1-3 {
+            .section3 {
+                height: 1190px;
+                display: flex;
+                flex-wrap: wrap;
+                ;
+                h2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    font-size: 15px;
+                }
+                .photo-text2 {
+                    flex-wrap: wrap;
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 30px;
+                    #biograph1 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                    }
+                    .bio4 {
+                        img {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+            .droite {
+                display: none;
+            }
+            .barre-jaune {
+                display: none;
+            }
+        }
+        video {
+            display: flex;
+        }
+    }
+}

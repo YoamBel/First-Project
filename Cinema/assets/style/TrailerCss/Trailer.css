@@ -1,0 +1,548 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e6e3e3;
+}
+
+main {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: white;
+  margin-top: 0px;
+}
+
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.5em;
+  color: black;
+  margin-top: 15px;
+  padding: 30px 31px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+main .section2 .img-film2 {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 40px;
+}
+
+main .section2 .img-film2 a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main .section2 .img-film2 a:hover {
+  color: #6d6dec;
+}
+
+main .section2 .img-film2 .img-film3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section2 .img-film2 .img-film3 img {
+  padding: 3px;
+}
+
+main .section2 .img-film2 .bande2 a {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6d6dec;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+}
+
+main .section2 .img-film2 .bande2 a:hover {
+  color: #9a9af1;
+}
+
+main .section7 .LATEST {
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+main .section7 .LATEST:hover {
+  color: #6d6dec;
+}
+
+main .section7 .cinema {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section7 .cinema #bioa1 a {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6d6dec;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+}
+
+main .section7 .cinema #bioa1 a:hover {
+  color: #9a9af1;
+}
+
+main .section7 .cinema #bioa1 .gris {
+  font-size: 10px;
+  color: #afadad;
+}
+
+main .section1 {
+  margin-left: 2em;
+  margin-right: 2em;
+  height: 345px;
+  margin-top: 40px;
+}
+
+main .section1 .barre-jaune {
+  height: 4px;
+  width: 80px;
+  background: #fecc00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 0px 450px;
+}
+
+main .section1 .rooms {
+  margin: 0px 0px 15px;
+  padding: 20px 15px 0px;
+}
+
+main .section1 .rooms a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 40px;
+}
+
+main .section1 .rooms a:hover {
+  color: #6d6dec;
+}
+
+main .section1 .NVmenu .menu2 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+main .section1 .NVmenu .menu2 nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section1 .NVmenu .menu2 nav ul li a {
+  font-size: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 7px 15px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #dad8d8;
+}
+
+main .section1 .NVmenu .menu2 nav ul li a:hover {
+  color: #6d6dec;
+  padding: 8px 15px;
+}
+
+main .section1 .NVmenu .bouton-barre2 {
+  width: 960px;
+  height: 35px;
+  background: #f0f0f0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 #barre2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 14px;
+  margin: 0px 0px 0px 0px;
+  font-size: 0.8em;
+  outline: none;
+  padding-left: 20px;
+  width: 350px;
+  background-color: white;
+  border: 0.4px solid black;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 .pt-text2 {
+  color: #6d6dec;
+  text-decoration: none;
+  margin: 7px 0px 0px 160px;
+  font-size: 18px;
+}
+
+main .section1 .NVmenu .bouton-barre2 .form2 .pt-text2:hover {
+  color: white;
+}
+
+main .section1 .NVmenu .barre-blanche {
+  background: white;
+  height: 0.6px;
+  width: 987px;
+  -webkit-box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+main .section1 .NVmenu .Link2 {
+  width: 1000px;
+  height: 45px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+main .section1 .NVmenu .Link2 .container7 {
+  font-size: 0.8em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section1 .NVmenu .Link2 .container7 p {
+  color: black;
+  padding: 0px 4px;
+}
+
+main .section1 .NVmenu .Link2 .container7 p a {
+  text-decoration: none;
+}
+
+main .section1 .NVmenu .Link2 .container7 p a:hover {
+  color: #6d6dec;
+}
+
+video {
+  width: 100%;
+  height: 500px;
+}
+
+@media (min-width: 960px) and (max-width: 1300px) {
+  main .section2 .img-film2 {
+    margin-bottom: 250px;
+  }
+  main .section2 .img-film2 .bande2 {
+    display: none;
+  }
+  main .section7 {
+    height: 600px;
+  }
+  main .section7 .cinema {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .section1 {
+    height: 220px;
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    display: none;
+  }
+  main .section1 .bouton-barre2 {
+    display: none;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  main .barre-blanche {
+    display: none;
+  }
+}
+
+@media (min-width: 777px) and (max-width: 959px) {
+  main .section2 .img-film2 {
+    margin-bottom: 250px;
+  }
+  main .section2 .img-film2 .bande2 {
+    display: none;
+  }
+  main .section7 {
+    height: 630px;
+  }
+  main .section7 .cinema {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section1 {
+    height: 220px;
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  main .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  main .barre-blanche {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 776px) {
+  main .section2 .img-film2 {
+    margin-bottom: 450px;
+  }
+  main .section2 .img-film2 .bande2 {
+    display: none;
+  }
+  main .section7 {
+    height: 1170px;
+  }
+  main .section7 .cinema {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section1 {
+    height: 315px;
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  main .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  main .section1 .barre-blanche {
+    visibility: hidden;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  main .barre-blanche {
+    display: none;
+  }
+}
+
+@media (min-width: 554px) and (max-width: 639px) {
+  main .section2 .img-film2 {
+    margin-bottom: 450px;
+  }
+  main .section2 .img-film2 .bande2 {
+    display: none;
+  }
+  main .section7 {
+    height: 1170px;
+  }
+  main .section7 .cinema {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section1 {
+    height: 315px;
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  main .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  main .section1 .barre-blanche {
+    visibility: hidden;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  main .barre-blanche {
+    display: none;
+  }
+}
+
+@media (min-width: 393px) and (max-width: 553px) {
+  main {
+    margin: 0px;
+    width: 100%;
+  }
+  main h1 {
+    font-size: 35px;
+  }
+  main .section2 .img-film2 {
+    margin-bottom: 480px;
+  }
+  main .section2 .img-film2 .img-film3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section2 .img-film2 .bande2 {
+    display: none;
+  }
+  main .section7 {
+    height: 1245px;
+  }
+  main .section7 .cinema {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section1 {
+    height: 350px;
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  main .section1 .rooms a {
+    font-size: 30px;
+  }
+  main .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  main .section1 .barre-blanche {
+    display: none;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  main .barre-blanche {
+    display: none;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 392px) {
+  main {
+    margin: 0px;
+    width: 100%;
+  }
+  main h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  main .section2 {
+    margin-top: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section2 .img-film2 {
+    margin-bottom: 1105px;
+  }
+  main .section2 .img-film2 a {
+    font-size: 18px;
+  }
+  main .section2 .img-film2 .bande2 {
+    display: none;
+  }
+  main .section7 {
+    height: 1085px;
+  }
+  main .section7 .cinema {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .section1 {
+    height: 480px;
+    display: none;
+  }
+  main .section1 .barre-jaune {
+    visibility: hidden;
+  }
+  main .section1 .rooms a {
+    font-size: 30px;
+  }
+  main .section1 .bouton-barre2 {
+    visibility: hidden;
+  }
+  main .section1 .barre-blanche {
+    display: none;
+  }
+  main .section1 .Link2 {
+    display: none;
+  }
+  main .barre-blanche {
+    display: none;
+  }
+  main #bioa1 img {
+    width: 190px;
+  }
+}
+/*# sourceMappingURL=Trailer.css.map */

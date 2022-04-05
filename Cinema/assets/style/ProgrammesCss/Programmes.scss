@@ -1,0 +1,391 @@
+@import "../variable/mixinGemeral.scss";
+@import "../variable/mixinSection1.scss";
+@import "../variable/vars.scss";
+@import "../variable/mixinSection3.scss";
+body {
+    background: white;
+    @include font ();
+}
+
+main {
+    @include main();
+    background: map-get($color, blanc-gris);
+    h1 {
+        margin-top: 0px;
+        @include h1();
+    }
+    .maindiv {
+        width: 65%;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-image: url('../ProgrammesCss/dora.jpg');
+        background-size: 100% 100%;
+        animation: slider 9s infinite linear;
+        margin: -175px 0px 0px 0px;
+    }
+    @keyframes slider {
+        0% {
+            background-image: url('../ProgrammesCss/dora.jpg');
+            background-size: 100% 100%;
+        }
+        35% {
+            background-image: url('../ProgrammesCss/malefic.jpg');
+            background-size: 100% 100%;
+        }
+        75% {
+            background-image: url('../ProgrammesCss/banlieu.jpg');
+            background-size: 100% 100%;
+        }
+        100% {
+            background-image: url('../ProgrammesCss/witch.jpg');
+            background-size: 100% 100%;
+        }
+    }
+    .section4 {
+        width: 100%;
+        height: 100px;
+        margin-top: 500px;
+        @include margin-right-left ();
+        .titre {
+            display: flex;
+            .section-video {
+                font-size: 30px;
+                color: map-get($color2, gris2);
+            }
+            .ligne-grise {
+                width: 750px;
+                height: 3px;
+                background: #efefef;
+                margin: 54px 0px 0px 0px;
+            }
+        }
+        .culte {
+            color: map-get($color2, gris2);
+            margin: -27px 0px 0px 0px;
+        }
+    }
+    .section1 {
+        width: 100%;
+        height: 500px;
+        margin: 20px 0px 0px 0px;
+        .photo-text {
+            display: flex;
+            justify-content: space-between;
+            @include margin-right-left ();
+            #biograph {
+                width: 315px;
+                height: 465px;
+                background: white;
+            }
+            .bio1 {
+                .jaune {
+                    @include jaune();
+                    margin: 10px 0px 0px 0px;
+                }
+                a {
+                    font-size: 14px;
+                    @include Lien();
+                }
+                .gris {
+                    @include gris();
+                }
+            }
+        }
+    }
+    .boutton {
+        margin-top: 20px;
+        display: flex;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    button {
+        background-color: black;
+        color: white;
+        @include button-rate();
+    }
+    .lien3 {
+        font-size: 0.8em;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        @include margin-right-left ();
+        width: 95%;
+        height: 40px;
+        background: white;
+        margin-top: 20px;
+        box-shadow: 10px -10px 31px #c0bdbd;
+        border-radius: 5px;
+        p {
+            color: black;
+            padding: 0px 4px;
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .section5 {
+        @include margin-right-left ();
+        width: 1003px;
+        height: 600px;
+        background-image: url('../ProgrammesCss/fond2.jpg');
+        border-radius: 2px;
+        margin-top: 10px;
+        .VIDEOKLASH {
+            color: map-get($color, jaune-spe);
+        }
+        .acteur {
+            color: map-get($color, jaune-spe);
+            text-align: center;
+            margin: 0px 0px 38px 0px;
+        }
+        .video2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            video {
+                width: 400px;
+            }
+        }
+        .VS {
+            @include margin-right-left ();
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+            p {
+                color: map-get($color, jaune-spe);
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+//----------------------------------------------------------------------
+//-------------------------MEDIA QUERY----------------------------------
+//----------------------------------------------------------------------
+//1 er taille
+//----------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 1009px) and (max-width: 1300px) {
+    main {
+        //height: 4630px;
+        .section1 {
+            height: 1000px;
+            .photo-text {
+                flex-wrap: wrap;
+            }
+        }
+        .boutton {
+            margin-top: -40px;
+        }
+        .section5 {
+            width: 640px;
+            height: 990px;
+            flex-wrap: wrap;
+            .video2 {
+                video {
+                    padding-top: 20px;
+                }
+            }
+            .VS {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 55px;
+                p {
+                    color: map-get($color, jaune-spe);
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+// 2eme taille
+//----------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 640px) and (max-width: 1008px) {
+    main {
+        // height: 5815px;
+        .section4 {
+            .titre {
+                .ligne-grise {
+                    display: none;
+                }
+            }
+        }
+        .section1 {
+            height: 1440px;
+            .photo-text {
+                flex-wrap: wrap;
+            }
+        }
+        .boutton {
+            margin-top: -40px;
+            display: none;
+        }
+        button {
+            display: none;
+        }
+        .section5 {
+            width: 380px;
+            height: 750px;
+            flex-wrap: wrap;
+            .video2 {
+                video {
+                    width: 350px;
+                    padding-top: 20px;
+                }
+            }
+            .VS {
+                display: none;
+            }
+        }
+    }
+}
+
+// 3 eme taille 
+//---------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 428px) and (max-width: 639px) {
+    main {
+        //height: 5625px;
+        margin: 0px;
+        width: 100%;
+        h1 {
+            font-size: 33px;
+        }
+        .section4 {
+            width: 350px;
+            .titre {
+                .ligne-grise {
+                    display: none;
+                }
+            }
+        }
+        .section1 {
+            height: 1440px;
+            .photo-text {
+                flex-wrap: wrap;
+                justify-content: center;
+                #biograph {
+                    width: 230px;
+                }
+            }
+        }
+        .boutton {
+            margin-top: -40px;
+            display: none;
+        }
+        button {
+            display: none;
+        }
+        .section5 {
+            width: 375px;
+            height: 610px;
+            flex-wrap: wrap;
+            .VIDEOKLASH {
+                display: none;
+            }
+            .video2 {
+                video {
+                    width: 265px;
+                    padding-top: 60px;
+                }
+            }
+            .VS {
+                display: none;
+            }
+        }
+        .boy {
+            width: 225px;
+            height: 200px;
+        }
+        .lien3 {
+            width: 90%;
+        }
+    }
+}
+
+// 4 eme taille 
+//-----------------------------------------------------------------------------------
+@media (min-width:250px) and (max-width: 427px) {
+    main {
+        // height: 7200px;
+        margin: 0px;
+        width: 100%;
+        justify-content: center;
+        height: 7130px;
+        h1 {
+            font-size: 19px;
+        }
+        .section4 {
+            width: 220px;
+            .titre {
+                //flex-wrap: wrap;
+                .ligne-grise {
+                    display: none;
+                }
+                .culte {
+                    display: none;
+                }
+            }
+        }
+        .section1 {
+            height: 1960px;
+            .photo-text {
+                flex-wrap: wrap;
+                justify-content: center;
+                #biograph {
+                    margin-top: 25px;
+                    width: 230px;
+                    height: 635px;
+                }
+            }
+        }
+        .boutton {
+            margin-top: -40px;
+            display: none;
+        }
+        button {
+            display: none;
+        }
+        .lien3 {
+            width: 75%;
+            height: 160px;
+            margin: 0px;
+            border-radius: 0px;
+            display: none;
+        }
+        .section5 {
+            width: 220px;
+            height: 520px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin: 30px 0px 0px 10px;
+            .VIDEOKLASH {
+                display: none;
+            }
+            .video2 {
+                video {
+                    width: 203px;
+                    padding-top: 60px;
+                }
+            }
+            .VS {
+                display: none;
+                p {
+                    color: map-get($color, jaune-spe);
+                    font-size: 40px;
+                }
+            }
+        }
+        .boy {
+            width: 230px;
+            height: 350px;
+        }
+    }
+}
